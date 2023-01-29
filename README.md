@@ -1,1 +1,3 @@
-# Eloquent-Javascript-3rdEdition-Exercise-Solutions
+# Eloquent-Javascript-3rd-Edition-Exercise-Solutions
+
+[Book Link](https://eloquentjavascript.net/)
