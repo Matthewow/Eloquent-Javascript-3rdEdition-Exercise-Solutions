@@ -58,3 +58,11 @@ const nth = (list, depth) => {
     else return nth(list.rest, depth - 1)
 }
 
+
+const deepEqual = (obj1, obj2) => { 
+    if (typeof(obj1) !== 'object' || typeof(obj2) !== 'object' || obj1 === null || obj2 === null) return obj1 === obj2;
+    if(obj1.length !== obj2.length) return false;
+    for (const key of Object.keys(obj1))
+        if(!deepEqual(obj1[key], obj2[key])) return false;
+    return true;
+}
